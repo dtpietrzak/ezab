@@ -4,6 +4,7 @@
   "description": "The easiest way to A/B",
   "main": "dist/index.js",
   "scripts": {
+    "build": "tsc && babel --extensions \".ts\" src -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,10 @@
   },
   "homepage": "https://github.com/dtpietrzak/ezab#readme",
   "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
     "typescript": "^5.1.6"
   }
 }
